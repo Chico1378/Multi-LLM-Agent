@@ -4,9 +4,9 @@ import os
 from utils.prompt_lib import prompt_dict
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input_path', type=str, default="")
-parser.add_argument('--output_path', type=str, default='')
-parser.add_argument('--prompt_type', type=str)
+parser.add_argument('--input_path', type=str, default="")  #处理完的数据$RAW_DATA_OUT_DIR/raw_data_stage_2.json
+parser.add_argument('--output_path', type=str, default='') #$TRAIN_DATA_OUT_DIR("dataset/toolbench/train")/train_$MODE.json \  
+parser.add_argument('--prompt_type', type=str)             #toolbench_#MODE
 
 
 args = parser.parse_args()
